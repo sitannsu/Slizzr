@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <include
+        android:id="@+id/toolbar"
+
+        layout="@layout/item_myfirstevents" />
+    <TextView
+        android:id="@+id/eventDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="hdhddydxxxxdsadsdddjnj vjdnvjdnvjndjvb jdnvjdnjdjjdhjd jdhdjdkbdhdjjdbd
+        jdjdkkjdjkdjdjjdjdjdjdjjdjdjdjdjjdjdjdjdj njhdhhdhd"/>
+
+    <ImageView
+        android:id="@+id/scnImage"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        fancy:fb_textSize="20sp"
+
+        android:layout_marginRight="30dp"
+
+        android:layout_marginTop="5dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#CC41D2"
+        fancy:fb_focusColor="#CC41D2"
+
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="20dp"
+        fancy:fb_text="SCAN "
+        fancy:fb_textColor="#FFFFFF" />
+
+
+
+</LinearLayout>
+</ScrollView>

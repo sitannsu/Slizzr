@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardElevation="10dp"
+    card_view:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/head"
+                android:text="Complete Action Using !"
+                android:textColor="@color/button_text_selected_color"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#EBEDEF"
+                android:padding="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/headtext"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@android:color/white"
+                android:padding="15dp"
+                android:layout_below="@+id/head"
+                android:text="Add your own style. Stylish and Cool.."/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view"
+                android:layout_below="@+id/headtext"
+                android:background="#EBEDEF">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:layout_below="@+id/view"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/galleryButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/green_500"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="GALLERY"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/view2"
+                    android:layout_below="@+id/headtext"
+                    android:background="#EBEDEF"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/cameraButton"
+                    android:textColor="@color/green_500"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:text="CAMERA"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

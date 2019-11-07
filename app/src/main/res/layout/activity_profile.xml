@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_profile" />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp">
+            
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="@dimen/avatar_height"
+                android:layout_height="@dimen/avatar_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/avatar_large"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/avatar_large"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"/>
+            <ImageView
+                android:id="@+id/imagePlus1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/icon_plus_profile"/>
+
+            <ImageView
+                android:id="@+id/imagePlus2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/icon_plus_profile"/>
+
+            <ImageView
+                android:id="@+id/imagePlus3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/icon_plus_profile"/>
+
+            <ImageView
+                android:id="@+id/imagePlus4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/icon_plus_profile"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Date of Birth" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Gender" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/briefBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brief Bio" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/submitt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/enter_otp"
+
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:elevation="1dp"
+
+            android:padding="5dp"
+            fancy:fb_borderColor="#CC41D2"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#CC41D2"
+            fancy:fb_radius="40dp"
+            fancy:fb_text="SUBMIT"
+
+            fancy:fb_textColor="@color/white"
+            fancy:fb_textSize="16sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

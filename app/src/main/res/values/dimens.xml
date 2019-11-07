@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="lower_layout_padding">25dp</dimen>
+
+    <dimen name="trend_layout_padding">2dp</dimen>
+    <dimen name="trend_layout_height">100dp</dimen>
+
+
+    <dimen name="recycler_size">100dp</dimen>
+    <dimen name="thumbnail_vertical_padding">10dp</dimen>
+    <dimen name="lower_layout_height">40dp</dimen>
+    <dimen name="checkout_lighting_image2">60dp</dimen>
+
+    <dimen name="popular_product_dimension">220dp</dimen>
+    <dimen name="most_recent_product">260dp</dimen>
+    <dimen name="others_profile_image_size">550dp</dimen>
+    <dimen name="tutorial_shared_element_translate_y">56dp</dimen>
+    <dimen name="tutorial_device_img_left_right_margin">32dp</dimen>
+
+    <!-- Recommended -->
+    <dimen name="space_size">40dp</dimen>
+
+    <dimen name="nav_drawer_width">320dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">68dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="discover_text_size">12sp</dimen>
+    <dimen name="discover_text_size_letter">10sp</dimen>
+    <dimen name="avatar_height">200sp</dimen>
+    <dimen name="small_plus_height">50sp</dimen>
+
+</resources>

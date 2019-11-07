@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_weight="80"
+        card_view:cardBackgroundColor="#39000000"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="23dp">
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+
+
+            />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/eventDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="20"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/eventMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:text="Mar2017"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/black"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:weightSum="100">
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Zara Williams birthday"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/paidType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:text="Mar2017"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rectangular_white_withbrder">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_location"/>
+
+        <TextView
+
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+
+
+            android:text="San Antonio, Las Vegas"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sentMessageRL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/msg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_message"/>
+
+        <TextView
+
+
+            android:layout_toRightOf="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+
+
+            android:text="Send message to all attendees"
+            android:layout_gravity="center_horizontal"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

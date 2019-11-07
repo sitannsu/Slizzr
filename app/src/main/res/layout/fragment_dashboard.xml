@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:swipedeck="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#717070"
+            android:text="Filter events:"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/headerRecycler"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.daprlabs.cardstack.SwipeDeck
+            android:id="@+id/swipe_deck"
+            android:layout_above="@+id/bottonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:padding="20dp"
+            swipedeck:card_spacing="10dp"
+            swipedeck:max_visible="1"
+
+            swipedeck:rotation_degrees="15" />
+        <RelativeLayout
+            android:id="@+id/bottonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rejectBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="PASS UP"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/event_attend_bcg"/>
+            <TextView
+                android:id="@+id/acceptBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="ATTEND"
+                android:layout_alignParentRight="true"
+
+                android:background="@drawable/event_passup_bcg"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

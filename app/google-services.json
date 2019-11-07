@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106645250186",
+    "firebase_url": "https://slizzr-c2051.firebaseio.com",
+    "project_id": "slizzr-c2051",
+    "storage_bucket": "slizzr-c2051.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106645250186:android:bd27481a3c6f9814",
+        "android_client_info": {
+          "package_name": "com.slizzz.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106645250186-u4vgfn87b9ajj0f8ju0g5vm7qlvem5ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDaiUe85pivJ9hwQOX5sB_HzLeHsGu-vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106645250186-u4vgfn87b9ajj0f8ju0g5vm7qlvem5ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

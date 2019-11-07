@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_profile" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/attendeRecycler"
+                android:scrollbars="horizontal"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
